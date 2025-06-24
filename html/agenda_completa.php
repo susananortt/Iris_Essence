@@ -105,28 +105,14 @@ foreach ($agendamentos as $a) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
-    <style>
-      /*  body { padding: 20px; background: #f9f9f9; }
-        .formulario { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
-        fieldset { border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
-        legend { font-weight: bold; font-size: 1.2rem; }
-        .agenda-dia { margin-bottom: 30px; }
-        .msg { margin-bottom: 15px; font-weight: bold; }
-        table th, table td { vertical-align: middle !important; }
-        .hora { width: 90px; font-weight: 600; }
-        .btn-acao { font-size: 1.2rem; margin-right: 10px; cursor: pointer; }
-        .header-menu ul { list-style:none; padding-left:0; display:flex; gap:15px; background:#333; color:#fff; margin:0; }
-        .header-menu ul li { padding: 12px 18px; }
-        .header-menu ul li a { color: #fff; text-decoration:none; }
-        .header-menu ul li:hover { background: #555; }*/
-    </style>
 </head>
 <body class="cadastro-fundo">
-
 <header>
     <nav>
         <ul>
-            <a href="../html/index.html"><img src="../imgs/logo.jpg" class="logo" alt="Logo" /></a>
+            <a href="../html/index.html">
+                <img src="../imgs/logo.jpg" class="logo" alt="Logo">
+            </a>
             <li><a href="../html/index.html">HOME</a></li>
             <li>
                 <a href="#">PROCEDIMENTOS FACIAIS</a>
@@ -149,10 +135,14 @@ foreach ($agendamentos as $a) {
                     <a href="../html/massagemrelaxante.html">Massagem Relaxante</a>
                 </div>
             </li>
-            <li><a href="../html/produtos.php">PRODUTOS</a></li>   
-            |<li><a href="../html/cadastro_agendamento.php">AGENDAR</a></li>|
+            <li><a href="../html/produtos.html">PRODUTOS</a></li>|
             <li><a href="../html/login.php">LOGIN</a></li>|
-            <li><a href="../html/cadastro_cliente.php">CADASTRO</a></li>|
+            <li><a href="../html/cadastro.html">CADASTRO</a></li>|
+
+            <div class="logout">
+                <form action = "logout.php" method= "POST">
+                <button type="submit">Logout</button>
+            </div>
         </ul>
     </nav>
 </header>
@@ -296,9 +286,9 @@ foreach ($agendamentos as $a) {
             <?php endforeach; ?>
         <?php endif; ?>
          <br>
-         <button type="button" class="voltar-button" onclick="window.history.back();">Voltar</button>
+<button type="button" class="voltar-button" onclick="window.location.href='principal.php'">Voltar</button>
     </fieldset>
-
+<br><br>
 </div>
 <br>
 <script>

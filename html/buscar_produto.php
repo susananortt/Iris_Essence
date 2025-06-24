@@ -57,7 +57,7 @@ a { margin-right: 10px; }
 <?php endwhile; ?>
 
 <br>
-<button type="button" class="voltar-button" onclick="window.history.back();">Voltar</button>
+<button type="button" class="voltar-button" onclick="window.location.href='principal.php'">Voltar</button>
 </table>
 </body>
 </html>

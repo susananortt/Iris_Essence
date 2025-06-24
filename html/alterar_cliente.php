@@ -104,10 +104,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['busca_cliente']) && (!
                     <a href="../html/massagemrelaxante.html">Massagem Relaxante</a>
                 </div>
             </li>
-            <li><a href="../html/produtos.html">PRODUTOS</a></li>
-            |<li><a href="../html/agendamento.html">AGENDAR</a></li>|
+            <li><a href="../html/produtos.html">PRODUTOS</a></li>|
             <li><a href="../html/login.php">LOGIN</a></li>|
             <li><a href="../html/cadastro.html">CADASTRO</a></li>|
+
+            <div class="logout">
+                <form action = "logout.php" method= "POST">
+                <button type="submit">Logout</button>
+            </div>
         </ul>
     </nav>
 </header>
@@ -155,7 +159,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['busca_cliente']) && (!
                     <button class="botao_limpeza" type="reset">Cancelar</button>
                 </div>
 
-                <a href="principal.php">Voltar</a>
+            <button type="button" class="voltar-button" onclick="window.location.href='principal.php'">Voltar</button>
             </form>
         <?php endif; ?>
     </fieldset>

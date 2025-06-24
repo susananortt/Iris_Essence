@@ -87,7 +87,7 @@
 </ul>
 </nav>
 </header>
-<br><br><br><br><br>
+<br>
 <div class="formulario">
 <form action="recuperar_senha.php" method="POST">
 <fieldset>
@@ -102,7 +102,7 @@
 </fieldset>
 </form>
 </div>
-<br><br><br><br><br><br><br>
+<br><br>
 <footer class="l-footer">&copy; 2025 Iris Essence - Beauty Clinic. Todos os direitos reservados.</footer>
 </body>
 </html>

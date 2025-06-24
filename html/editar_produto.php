@@ -82,7 +82,7 @@
 </nav>
 </header>
 
-<br><br><br>
+<br>
 
 <div class="formulario">
 <form method="POST" enctype="multipart/form-data">
@@ -112,7 +112,7 @@
 </form>
 </div>
 
-<br><br><br><br>
+<br><br>
 <footer class="l-footer">
 <p>&copy; 2025 Iris Essence - Beauty Clinic. Todos os direitos reservados.</p>
 <div class="footer-contato">

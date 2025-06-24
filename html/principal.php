@@ -66,12 +66,8 @@
     "Agenda" =>[
     "agenda_mensal.php"]],
     
-    3 => ["Cadastrar" =>[
-    "cadastro_cliente.php",
-    "cadastro_agendamento.php"],
-    
-    "Alterar" =>[
-    "alterar_cliente.php"]]
+    3 => ["Agendar" =>[
+    "agendar.php"]]
     
     ];
     
@@ -153,8 +149,6 @@
 </li>
 
 <li><a href="../html/produtos.php">PRODUTOS</a></li>
-
-|<li><a href="../html/cadastro_agendamento.php">AGENDAR</a></li>|
 <li><a href="../html/login.php">LOGIN</a></li>|
 <li><a href="../html/cadastro_cliente.php">CADASTRO</a></li>|
 </ul>
@@ -187,7 +181,7 @@ Perfil: <?php echo $nome_perfil; ?></h2>
 <?php endforeach; ?>
 </ul>
 </nav>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <footer class="l-footer">&copy; 2025 Iris Essence - Beauty Clinic. Todos os direitos reservados.</footer>
 </body>
 </html>

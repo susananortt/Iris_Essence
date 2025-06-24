@@ -58,41 +58,45 @@
 </head>
 <body class="cadastro-fundo">
 <header>
-<nav>
-<ul>
-<a href="../html/index.html">
-<img src="../imgs/logo.jpg" class="logo" alt="Logo">
-</a>
-<li><a href="../html/index.html">HOME</a></li>
-<li>
-<a href="#">PROCEDIMENTOS FACIAIS</a>
-<div class="submenu">
-<a href="../html/limpezapele.html">Limpeza de Pele</a>
-<a href="../html/labial.html">Preenchimento labial</a>
-<a href="../html/microagulhamento.html">Microagulhamento</a>
-<a href="../html/botoxfacial.html">Botox</a>
-<a href="../html/acne.html">Tratamento para Acne</a>
-<a href="../html/rinomodelacao.html">Rinomodelação</a>
-</div>
-</li>
-<li>
-<a href="#">PROCEDIMENTOS CORPORAIS</a>
-<div class="submenu">
-<a href="../html/massagemmodeladora.html">Massagem Modeladora</a>
-<a href="../html/drenagemlinfatica.html">Drenagem Linfática</a>
-<a href="../html/depilacaolaser.html">Depilação a Laser</a>
-<a href="../html/depilacaocera.html">Depilação de cera</a>
-<a href="../html/massagemrelaxante.html">Massagem Relaxante</a>
-</div>
-</li>
-<li><a href="../html/produtos.php">PRODUTOS</a></li>
-|<li><a href="../html/cadastro_agendamento.php">AGENDAR</a></li>|
-<li><a href="../html/login.php">LOGIN</a></li>|
-<li><a href="../html/cadastro_cliente.php">CADASTRO</a></li>|
-</ul>
-</nav>
+    <nav>
+        <ul>
+            <a href="../html/index.html">
+                <img src="../imgs/logo.jpg" class="logo" alt="Logo">
+            </a>
+            <li><a href="../html/index.html">HOME</a></li>
+            <li>
+                <a href="#">PROCEDIMENTOS FACIAIS</a>
+                <div class="submenu">
+                    <a href="../html/limpezapele.html">Limpeza de Pele</a>
+                    <a href="../html/labial.html">Preenchimento labial</a>
+                    <a href="../html/microagulhamento.html">Microagulhamento</a>
+                    <a href="../html/botoxfacial.html">Botox</a>
+                    <a href="../html/acne.html">Tratamento para Acne</a>
+                    <a href="../html/rinomodelacao.html">Rinomodelação</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">PROCEDIMENTOS CORPORAIS</a>
+                <div class="submenu">
+                    <a href="../html/massagemmodeladora.html">Massagem Modeladora</a>
+                    <a href="../html/drenagemlinfatica.html">Drenagem Linfática</a>
+                    <a href="../html/depilacaolaser.html">Depilação a Laser</a>
+                    <a href="../html/depilacaocera.html">Depilação de cera</a>
+                    <a href="../html/massagemrelaxante.html">Massagem Relaxante</a>
+                </div>
+            </li>
+            <li><a href="../html/produtos.html">PRODUTOS</a></li>|
+            <li><a href="../html/login.php">LOGIN</a></li>|
+            <li><a href="../html/cadastro.html">CADASTRO</a></li>|
+
+            <div class="logout">
+                <form action = "logout.php" method= "POST">
+                <button type="submit">Logout</button>
+            </div>
+        </ul>
+    </nav>
 </header>
-<br><br><br><br><br>
+<br>
 
 <div class="formulario">
 <fieldset>
@@ -116,11 +120,11 @@
 </div>
 
 <br>
-<button type="button" class="voltar-button" onclick="window.history.back();">Voltar</button></form>
+<button type="button" class="voltar-button" onclick="window.location.href='principal.php'">Voltar</button>
 </fieldset>
 </div>
 
-<br><br><br><br><br><br>
+<br><br>
 <footer class="l-footer">&copy; 2025 Iris Essence - Beauty Clinic. Todos os direitos reservados.</footer>
 </body>
 </html>

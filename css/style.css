@@ -12,7 +12,6 @@
     color: #333;
     padding-bottom: 60px;
     margin: 0;
-    padding: 0 0 80px 0;
     /* deixa espaço suficiente para o footer */
   
 }
@@ -321,6 +320,11 @@ select:focus {
     text-align: center;
     padding: 20px;
     font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
     
 }
 .product-container {
@@ -436,6 +440,8 @@ select:focus {
     display: flex;
     
 }
+
+
 .voltar-button {
     display: inline-block;
     background-color: #444;
@@ -458,4 +464,73 @@ select:focus {
     text-decoration: none;
     color: white;
     
+}
+.preco-procedimento {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0a940a;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(10, 148, 10, 0.08);
+    padding: 8px 16px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    width: fit-content;
+}
+
+
+/* Estilo padrão para todas as páginas de exclusão */
+.excluir {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.excluir legend {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.excluir table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.excluir th {
+    background-color: #000;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.excluir td {
+    background-color: rgba(255,255,255,0.95);
+    padding: 10px;
+    text-align: center;
+}
+
+.excluir td a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.excluir td a:hover {
+    text-decoration: underline;
+    color: darkred;
 }

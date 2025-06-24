@@ -86,7 +86,7 @@
 </ul>
 </nav>
 </header>
-<br><br><br><br><br>
+<br>
 
 <div class="formulario">
 <fieldset>
@@ -117,8 +117,8 @@
 <td><?=htmlspecialchars($fornecedor['telefone']) ?></td>
 <td><?=htmlspecialchars($fornecedor['produto']) ?></td>
 <td>
-<a href = "alterar_fornecedor.php?id=<?=htmlspecialchars($fornecedor['id_fornecedor']) ?>">Alterar</a>
-<a href = "excluir_fornecedor.php?id=<?=htmlspecialchars($fornecedor['id_fornecedor']) ?>"onclick="return confirm('Tem certeza que deseja excluir este fornecedor')">Excluir</a>
+<a href = "alterar_fornecedor.php?id=<?=htmlspecialchars($fornecedor['id_fornecedor']) ?>">✏️</a>
+<a href = "excluir_fornecedor.php?id=<?=htmlspecialchars($fornecedor['id_fornecedor']) ?>"onclick="return confirm('Tem certeza que deseja excluir este fornecedor')">🗑️</a>
 </td>
 </tr>
 <?php endforeach; ?>

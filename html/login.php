@@ -110,6 +110,7 @@
 </form>
 <br>
 <p><a href="recuperar_senha.php">Esqueci minha Senha</a></p>
+<button type="button" class="voltar-button" onclick="window.history.back();">Voltar</button>
 </div>
 <br><br><br><br><br><br>
 <footer class="l-footer">&copy; 2025 Iris Essence - Beauty Clinic. Todos os direitos reservados.</footer>

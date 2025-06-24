@@ -86,7 +86,7 @@
 </ul>
 </nav>
 </header>
-<br><br><br><br><br>
+<br>
 
 <div class="formulario">
 <fieldset>
@@ -124,8 +124,8 @@
 <td><?=htmlspecialchars($cliente['genero']) ?></td>
 <td><?=htmlspecialchars($cliente['id_perfil']) ?></td>
 <td>
-<a href = "alterar_cliente.php?id=<?=htmlspecialchars($usuario['id_cliente']) ?>">Alterar</a>
-<a href = "excluir_cliente.php?id=<?=htmlspecialchars($usuario['id_cliente']) ?>"onclick="return confirm('Tem certeza que deseja excluir este cliente?')">Excluir</a>
+<a href = "alterar_cliente.php?id=<?=htmlspecialchars($usuario['id_cliente']) ?>">✏️</a>
+<a href = "excluir_cliente.php?id=<?=htmlspecialchars($usuario['id_cliente']) ?>"onclick="return confirm('Tem certeza que deseja excluir este cliente?')">🗑️</a>
 </td>
 </tr>
 <?php endforeach; ?>
@@ -140,7 +140,7 @@
 </fieldset>
 </div>
 
-<br><br><br><br><br><br>
+<br><br>
 <footer class="l-footer">&copy; 2025 Iris Essence - Beauty Clinic. Todos os direitos reservados.</footer>
 </body>
 </html>

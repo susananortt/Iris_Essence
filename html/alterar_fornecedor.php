@@ -124,7 +124,7 @@
 </nav>
 </header>
 
-<br><br><br><br><br>
+<br>
 
 <div class="formulario">
 <fieldset>
@@ -168,7 +168,7 @@
 <button type="button" class="voltar-button" onclick="window.history.back();">Voltar</button>    </fieldset>
 </div>
 
-<br><br><br><br><br><br>
+<br><br>
 
 <footer class="l-footer">&copy; 2025 Íris Essence - Beauty Clinic. Todos os direitos reservados.</footer>
 

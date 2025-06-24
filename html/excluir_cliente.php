@@ -84,7 +84,7 @@
 </header>
 <br><br><br><br><br>
 
-<fieldset>
+<fieldset class="excluir">
 <legend>Excluir Cliente</legend>
 <?php if (!empty($clientes)): ?>
 <table border="1">
@@ -100,7 +100,7 @@
 <td><?= htmlspecialchars($cliente['nome']) ?></td>
 <td><?= htmlspecialchars($cliente['email']) ?></td>
 <td>
-<a href="excluir_cliente.php?id=<?= htmlspecialchars($cliente['id_cliente']) ?>" onclick="return confirm('Tem certeza que deseja excluir este cliente?')">Excluir</a>
+<a href="excluir_cliente.php?id=<?= htmlspecialchars($cliente['id_cliente']) ?>" onclick="return confirm('Tem certeza que deseja excluir este cliente?')">🗑️</a>
 </td>
 </tr>
 <?php endforeach; ?>

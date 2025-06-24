@@ -93,7 +93,7 @@
 </ul>
 </nav>
 </header>
-<br><br><br><br><br>
+<br>
 
 <div class="formulario">
 <form action="alterar_senha.php" method="POST">
@@ -130,7 +130,7 @@ function mostrarSenha(){
     senha2.type = tipo2;
 }
 </script>
-<br><br><br><br><br><br>
+<br><br>
 <footer class="l-footer">&copy; 2025 Iris Essence - Beauty Clinic. Todos os direitos reservados.</footer>
 </body>
 </html>

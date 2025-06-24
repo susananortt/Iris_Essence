@@ -133,7 +133,7 @@
 </nav>
 </header>
 
-<br><br><br><br><br>
+<br>
 
 <div class="formulario">
 <fieldset>
@@ -182,7 +182,7 @@
 </fieldset>
 </div>
 
-<br><br><br><br><br><br>
+<br><br>
 
 <footer class="l-footer">&copy; 2025 Íris Essence - Beauty Clinic. Todos os direitos reservados.</footer>
 

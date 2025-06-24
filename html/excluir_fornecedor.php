@@ -91,7 +91,7 @@
 </header>
 <br><br><br><br><br>
 
-<fieldset>
+<fieldset class="excluir">
 <legend>Excluir fornecedor</legend>
 <?php if (!empty($fornecedores)): ?>
 <table border="1">
@@ -111,7 +111,7 @@
 <td><?= htmlspecialchars($fornecedor['produto']) ?></td>
 
 <td>
-<a href="excluir_produto.php?id=<?= htmlspecialchars($fornecedor['id_fornecedor']) ?>" onclick="return confirm('Tem certeza que deseja excluir este fornecedor?')">Excluir</a>
+<a href="excluir_produto.php?id=<?= htmlspecialchars($fornecedor['id_fornecedor']) ?>" onclick="return confirm('Tem certeza que deseja excluir este fornecedor?')">🗑️</a>
 </td>
 </tr>
 <?php endforeach; ?>

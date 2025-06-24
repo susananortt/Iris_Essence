@@ -90,7 +90,7 @@
 </header>
 <br><br><br><br><br>
 
-<fieldset>
+<fieldset class="excluir">
 <legend>Excluir funcionário</legend>
 <?php if (!empty($funcionarios)): ?>
 <table border="1">
@@ -117,7 +117,7 @@
 <td><?= htmlspecialchars($funcionario['cargo']) ?></td>
 <td><?= htmlspecialchars($funcionario['id_perfil']) ?></td>
 <td>
-<a href="excluir_funcionario.php?id=<?= htmlspecialchars($funcionario['id_funcionario']) ?>" onclick="return confirm('Tem certeza que deseja excluir este funcionário?')">Excluir</a>
+<a href="excluir_funcionario.php?id=<?= htmlspecialchars($funcionario['id_funcionario']) ?>" onclick="return confirm('Tem certeza que deseja excluir este funcionário?')">🗑️</a>
 </td>
 </tr>
 <?php endforeach; ?>

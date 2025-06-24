@@ -124,8 +124,8 @@
 <td><?=htmlspecialchars($funcionario['cargo']) ?></td>
 <td><?=htmlspecialchars($funcionario['id_perfil']) ?></td>
 <td>
-<a href = "alterar_funcionario.php?id=<?=htmlspecialchars($funcionario['id_funcionario']) ?>">Alterar</a>
-<a href = "excluir_funcionario.php?id=<?=htmlspecialchars($funcionario['id_funcionario']) ?>"onclick="return confirm('Tem certeza que deseja excluir este funcionário')">Excluir</a>
+<a href = "alterar_funcionario.php?id=<?=htmlspecialchars($funcionario['id_funcionario']) ?>">✏️</a>
+<a href = "excluir_funcionario.php?id=<?=htmlspecialchars($funcionario['id_funcionario']) ?>"onclick="return confirm('Tem certeza que deseja excluir este funcionário')">🗑️</a>
 </td>
 </tr>
 <?php endforeach; ?>

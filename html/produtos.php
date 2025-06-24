@@ -115,7 +115,7 @@ function validarFormulario() {
 </div>
 </li>
 <li><a href="../html/produtos.php">PRODUTOS</a></li>
-|<li><a href="../html/cadastro_agendamento.html">AGENDAR</a></li>|
+|<li><a href="../html/cadastro_agendamento.php">AGENDAR</a></li>|
 <li><a href="../html/login.php">LOGIN</a></li>|
 <li><a href="../html/cadastro_cliente.php">CADASTRO</a></li>|
 </ul>

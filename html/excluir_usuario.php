@@ -90,7 +90,7 @@
 </header>
 <br><br><br><br><br>
 
-<fieldset>
+<fieldset class="excluir">
 <legend>Excluir usuário</legend>
 <?php if (!empty($usuarios)): ?>
 <table border="1">
@@ -108,7 +108,7 @@
 <td><?= htmlspecialchars($usuario['email']) ?></td>
 <td><?= htmlspecialchars($usuario['id_perfil']) ?></td>
 <td>
-<a href="excluir_usuario.php?id=<?= htmlspecialchars($usuario['id_usuario']) ?>" onclick="return confirm('Tem certeza que deseja excluir este usuário?')">Excluir</a>
+<a href="excluir_usuario.php?id=<?= htmlspecialchars($usuario['id_usuario']) ?>" onclick="return confirm('Tem certeza que deseja excluir este usuário?')">🗑️</a>
 </td>
 </tr>
 <?php endforeach; ?>

@@ -28,7 +28,8 @@ CREATE TABLE IF NOT EXISTS cliente (
   email VARCHAR(100) NOT NULL,
   data_nascimento DATE NOT NULL,
   senha varchar(16) NOT NULL,
-  genero VARCHAR(1) NOT NULL
+  genero VARCHAR(1) NOT NULL,
+  id_perfil INT DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Tabela: fornecedor
@@ -49,8 +50,7 @@ CREATE TABLE IF NOT EXISTS funcionario (
   endereco VARCHAR(100) NOT NULL,
   email VARCHAR(100) NOT NULL,
   genero VARCHAR(1) NOT NULL,
-  cargo VARCHAR(30) NOT NULL,
-  id_perfil int not null
+  cargo VARCHAR(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Tabela: procedimento
@@ -61,26 +61,22 @@ CREATE TABLE IF NOT EXISTS procedimento (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Tabela: produto
-CREATE TABLE IF NOT EXISTS produto (
-  id_produto INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(50) NOT NULL,
-  preco DECIMAL(10,2) NOT NULL,
-  descricao VARCHAR(100) NOT NULL,
-  quantidade INT NOT NULL,
-  fk_fornecedor INT NOT NULL,
-  FOREIGN KEY (fk_fornecedor) REFERENCES fornecedor(id_fornecedor)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    descricao TEXT NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    imagem VARCHAR(500) NOT NULL
+);
 
 -- Tabela: agendamento
-CREATE TABLE IF NOT EXISTS agendamento (
-  id_agendamento INT AUTO_INCREMENT PRIMARY KEY,
-  fk_procedimento INT,
-  data_agendamento DATE NOT NULL,
-  hora TIME NOT NULL,
-  fk_cliente INT,
-  FOREIGN KEY (fk_procedimento) REFERENCES procedimento(id_procedimento),
-  FOREIGN KEY (fk_cliente) REFERENCES cliente(id_cliente)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE agendamentos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    procedimento VARCHAR(100) NOT NULL,
+    data DATE NOT NULL,
+    hora TIME NOT NULL
+);
 
 -- Inserindo perfis
 INSERT INTO perfil (nome_perfil)
